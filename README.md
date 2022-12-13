@@ -1,4 +1,4 @@
-Preview | نتیجه ی کار blushwink
+Preview | نتیجه ی کار 
 
 https://codingwithenjoy.github.io/Light-Dark-Mode-HTML-CSS-JS/
 
