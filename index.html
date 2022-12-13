@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding With Enjoy | برنامه نویسی با لذت</title>
+    <style>
+      body {
+        font-family: A Dast Nevis, Calibri;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(240, 240, 240);
+        color: black;
+        transition: 0.5s;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .dark-mode {
+        background-color: rgb(14, 35, 56);
+        color: white;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(14, 35, 56);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: rgb(140, 140, 140);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: rgb(240, 240, 240);
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Coding With Enjoy | برنامه نویسی با لذت</h1>
+
+    <label class="switch">
+      <input type="checkbox" onclick="myFunction()" />
+      <span class="slider round"></span>
+    </label>
+
+    <script>
+      function myFunction() {
+        var darkMode = document.body;
+        darkMode.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
